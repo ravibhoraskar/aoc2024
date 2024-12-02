@@ -1,7 +1,6 @@
 use anyhow::Result;
-use std::io::BufRead;
 use std::collections::HashMap;
-
+use std::io::BufRead;
 
 fn main() -> Result<()> {
     let stdin = std::io::stdin();
