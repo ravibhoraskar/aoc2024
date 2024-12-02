@@ -8,3 +8,7 @@ anyhow = "1.0"
 [[bin]]
 name = "day1"
 path = "src/day1.rs"
+
+[[bin]]
+name = "day1-2"
+path = "src/day1-2.rs"
