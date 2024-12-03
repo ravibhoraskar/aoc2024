@@ -23,7 +23,7 @@ fn main() -> Result<()> {
             if diff < 1 || diff > 3 {
                 fails = true;
                 break;
-            }            
+            }
         }
         if !fails {
             sum += 1;

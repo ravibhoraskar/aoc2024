@@ -33,7 +33,7 @@ fn is_safe(split: &Vec<i32>) -> bool {
         diff = diff.abs();
         if diff < 1 || diff > 3 {
             return false;
-        }            
+        }
     }
     return true;
 }
