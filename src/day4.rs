@@ -34,21 +34,22 @@ fn find_xmas(
 ) -> Option<i32> {
     let i = ii as i32;
     let j = jj as i32;
-    if grid[ii][jj] == 'X'
-        && grid
+    if *grid.get(ii)?.get(jj)? == 'X'
+        && *grid
             .get((i + i_increment) as usize)?
             .get((j + j_increment) as usize)?
             == 'M'
-        && grid
+        && *grid
             .get((i + 2 * i_increment) as usize)?
             .get((j + 2 * j_increment) as usize)?
             == 'A'
-        && grid
-            .get((i + 2 * i_increment) as usize)?
-            .get((j + 2 * j_increment) as usize)?
+        && *grid
+            .get((i + 3 * i_increment) as usize)?
+            .get((j + 3 * j_increment) as usize)?
             == 'S'
     {
         Some(1)
+    } else {
+        None
     }
-    None
 }
