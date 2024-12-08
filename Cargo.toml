@@ -4,6 +4,7 @@ edition = "2021"
 
 [dependencies]
 anyhow = "1.0"
+memoize = "0.4.2"
 regex = "1.11.1"
 
 [[bin]]
@@ -54,3 +55,7 @@ path = "src/day6.rs"
 [[bin]]
 name = "day6-2"
 path = "src/day6-2.rs"
+
+[[bin]]
+name = "day7"
+path = "src/day7.rs"
