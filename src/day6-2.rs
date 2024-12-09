@@ -43,12 +43,7 @@ fn main() -> Result<()> {
     Ok(())
 }
 
-fn does_it_loop(
-    mut grid: Vec<Vec<char>>,
-    mut x: i32,
-    mut y: i32,
-    mut dir: Direction,
-) -> bool {
+fn does_it_loop(mut grid: Vec<Vec<char>>, mut x: i32, mut y: i32, mut dir: Direction) -> bool {
     let mut loop_count = 0;
     while x >= 0 && x < grid.len() as i32 && y >= 0 && y < grid[0].len() as i32 {
         if loop_count > grid.len() * grid[0].len() {
