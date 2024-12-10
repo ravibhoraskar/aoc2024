@@ -47,7 +47,7 @@ fn main() -> Result<()> {
 
     // println!("Unwrapped: {:?}", unwrapped);
 
-    let mut checksum:i64 = 0;
+    let mut checksum: i64 = 0;
     let mut lengthsofar = 0;
     for (id, length) in unwrapped {
         if id != -1 {
