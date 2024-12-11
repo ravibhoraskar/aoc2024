@@ -1,7 +1,6 @@
 use anyhow::Result;
 use std::io::BufRead;
 
-
 fn main() -> Result<()> {
     let stdin = std::io::stdin();
     let grid: Vec<Vec<_>> = stdin
@@ -40,7 +39,7 @@ fn get_reachables(grid: &Vec<Vec<usize>>, i: usize, j: usize) -> Vec<(usize, usi
         {
             continue;
         }
-        let (x, y) = ((i as i32 + di) as usize, (j as i32+ dj) as usize);
+        let (x, y) = ((i as i32 + di) as usize, (j as i32 + dj) as usize);
         if grid[x][y] == grid[i][j] + 1 {
             reachables.extend(get_reachables(grid, x, y));
         }
